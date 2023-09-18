@@ -9,3 +9,8 @@ target.name = source.name,
 target.age = source.age,
 target.etl_updated_at = source.ETL_RECORD_CREATED_AT
 WHEN NOT MATCHED and source.row_num = 1 THEN 
+INSERT VALUES (source.name,
+source.age,
+source.empid,
+source.ETL_RECORD_CREATED_AT,
+source.ETL_RECORD_CREATED_AT);
