@@ -33,5 +33,6 @@ pqr,33,8
 3. Create land layer external table
 4. Create raw layer table and stream objects (to have change data capture for new data inserts) in raw layer table
 5. Copy data in raw layer from datalake
-6. Copy data in definer layer using stream as input and take latest record based on etl created at
-7. Wrap copy task in raw layer and merge logic to put data in defined layer under task to have a daily run of the jobs/job schduling.
+6. Create defined layer table
+7. Copy data in defined layer using stream as input and take latest record based on etl created at
+8. Wrap copy task in raw layer and merge logic to put data in defined layer under task to have a daily run of the jobs/job schduling.
