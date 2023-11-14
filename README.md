@@ -6,6 +6,14 @@ Contains steps by step excercise to start etl with snowflake
 ## Summary
 In this tutorial ,we will learn how to do etl from datalake to snowflake. Here are the steps that will be done.We will load the data from azure adls gen2/datalake to snowflake.Snowflake will have a data coming in 3 layers land, raw and defined layer. Land layer will just have external table. Raw layer will have permanent table copy data from datalake into snowflake and append only stream to add new records into stream.Defined layer will have permanent table ,whose data will be populated from row layer stream.
 
+## Architecture 
+![image](https://github.com/trn86/LearnSnowflake/assets/46071637/9a592b60-7f56-4eec-ab4a-cddbee7801ac)
+
+## Prerequisites
+1. Snowflake demo account
+2. Basic sql skills
+3. Understanding of snowflake table, stream ,file format, storage integration, external stage, task
+
 ## Snowflake objects to be created
 Database - hrms\
 Schemas - land,raw,defined\
@@ -23,10 +31,8 @@ abc,30,9\
 xyz,25,3\
 pqr,33,8
 
-#### Architecture 
-![image](https://github.com/trn86/LearnSnowflake/assets/46071637/9a592b60-7f56-4eec-ab4a-cddbee7801ac)
 
-#### Data Movement
+#### Data Ingestion/Transformation/Movement
 ![image](https://github.com/trn86/LearnSnowflake/assets/46071637/34369ea5-76fd-4da8-963e-5a5e456816d0)
 
 #### Steps/Excercise we will perform
